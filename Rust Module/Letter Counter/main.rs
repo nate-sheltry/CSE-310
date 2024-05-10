@@ -76,7 +76,8 @@ fn identify_characters(letters: &[char], my_hashmap:&mut HashMap<char,u32>){
 fn write_file(content: Vec<(char, u32)>) -> std::io::Result<()> {
     let mut file = File::create("results.txt")?;
     for (letter, count) in content {
-        let line = format!("{}: {}\n", letter, count);
+        let line = format!("{}: {}\n",
+                            letter, count);
         file.write_all(line.as_bytes())?;
     }
     Ok(())
@@ -97,7 +98,9 @@ fn main() {
     if !file_response.is_ok() {
         println!("{}{}{}{}",
                  "File failed to read, please make sure you have a file",
-                 " by the name \"",TEXT_FILE,"\" in the program's directory.");
+                 " by the name \"",
+                 TEXT_FILE,
+                 "\" in the program's directory.");
         return;
     }
 
@@ -123,7 +126,8 @@ fn main() {
 
     // Output the results to the console.
     for (letter, count) in &sorted_map {
-        println!("{}: {}", letter, count);
+        println!("{}: {}",
+                  letter, count);
     }
 
     // Use sorted map here before the program closes to output our data
