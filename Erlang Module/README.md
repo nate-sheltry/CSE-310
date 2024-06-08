@@ -1,7 +1,6 @@
 # Overview
 
 This module is focused on learning a more functional perspective, in this specific instance, Erlang has no direct form of iteration so it was about implementing recursion and alternatives to iterative programming, while learning how to manipulate and transfer data without using traditional objects.
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
 
 This program will scan a directory, find the files with their file type within it and then ask the user which file type they are looking for.
 
