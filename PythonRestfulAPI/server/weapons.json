@@ -1,0 +1,29 @@
+{
+    "requirementTypes":[
+        "strength",
+        "agility",
+        "intelligence"
+    ],
+    "weaponTypes":[
+        "onehanded",
+        "twohanded",
+        "light",
+        "heavy",
+        "reach"
+    ],
+    "weapons":[
+        {
+            "name":"Sword",
+            "weaponTypes": [
+                "onehanded"
+            ],
+            "damage":10,
+            "range":1,
+            "requirements":{
+                "strength": 10,
+                "agility":0,
+                "intelligence":0
+            }
+        }
+    ]
+}
