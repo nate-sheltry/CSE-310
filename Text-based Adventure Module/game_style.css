@@ -1,0 +1,45 @@
+html {
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+body {
+    height:100%;
+    margin:0;
+    padding:0;
+}
+.game-container {
+    width:98%;
+    height:97.5%;
+    margin:1% auto auto auto;
+    padding:0;
+}
+
+#game_canvas {
+    border: 1px solid black
+}
+
+.arrow {
+    display:none;
+    position: absolute;
+    bottom: 10px;
+    right: 10%;
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+    background: url('arrow.png') no-repeat center center;
+    background-size: contain;
+    animation: bounce 1s infinite;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
